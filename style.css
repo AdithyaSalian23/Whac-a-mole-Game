@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #63a4ff, #83eaf1);
+}
+
+.grid {
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-color: #f0f0f0;
+}
+
+.mole {
+    background-image: url("mole.jpg");
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    margin-top: 0;
+}
+
+#score,
+#time-left {
+    margin-bottom: 10px;
+    color: green;
+}
